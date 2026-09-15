@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#02070d">
+  <meta name="description" content="ORION AI Core — futuristic global infrastructure command interface for God's Eye View.">
+  <title>ORION · AI CORE · Command Center</title>
+  <link rel="stylesheet" href="./orion.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">◉</span><span>ORION</span><small>AI CORE</small></div>
+    <nav aria-label="Primary">
+      <button class="nav active" data-view="command">COMMAND</button>
+      <button class="nav" data-view="network">NETWORK</button>
+      <button class="nav" data-view="telemetry">TELEMETRY</button>
+      <button class="nav" data-view="systems">SYSTEMS</button>
+    </nav>
+    <div class="top-status"><span class="live-dot"></span><span id="utc">UTC --:--:--</span><span class="secure">SECURE</span></div>
+  </header>
+
+  <main id="command" class="view active-view">
+    <section class="hero-grid">
+      <aside class="rail left-rail">
+        <article class="panel compact">
+          <div class="panel-head"><span>ORION CORE MODULE</span><b>01</b></div>
+          <div class="globe-mini" aria-hidden="true"><div class="globe-grid"></div><div class="globe-light"></div></div>
+          <div class="metric"><span>GLOBAL POWER GRID</span><strong>99.994%</strong></div>
+          <div class="metric"><span>SYSTEM INTEGRITY</span><strong>100%</strong></div>
+        </article>
+        <article class="panel">
+          <div class="panel-head"><span>GLOBAL NETWORK</span><b>LINK</b></div>
+          <div class="network-lines"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="metric"><span>ACTIVE NODES</span><strong id="nodes">18,472</strong></div>
+          <div class="metric"><span>LATENCY</span><strong id="latency">18 ms</strong></div>
+        </article>
+        <article class="panel alert-panel">
+          <div class="panel-head"><span>ENERGY FEED</span><b>STABLE</b></div>
+          <div class="bars" id="energyBars"></div>
+          <div class="metric"><span>LOAD</span><strong id="load">64.2%</strong></div>
+        </article>
+      </aside>
+
+      <section class="core-stage">
+        <div class="stage-label top-left">ORBITAL COMMAND // PRIMARY SENSOR</div>
+        <div class="stage-label top-right">GLOBAL NETLINK // ENCRYPTED</div>
+        <div class="eye-wrap" aria-label="ORION synthetic eye visualization">
+          <div class="eye-aura"></div>
+          <div class="eye-orbit orbit-a"></div><div class="eye-orbit orbit-b"></div><div class="eye-orbit orbit-c"></div>
+          <svg class="mesh" viewBox="0 0 900 480" role="img" aria-label="Network mesh surrounding ORION core">
+            <g class="mesh-lines">
+              <path d="M35 240 L155 125 L300 190 L450 55 L600 190 L745 125 L865 240 L745 355 L600 290 L450 425 L300 290 L155 355 Z"/>
+              <path d="M35 240 L300 290 L450 55 L600 290 L865 240 L600 190 L450 425 L300 190 Z"/>
+              <path d="M155 125 L450 55 L745 125 M155 355 L450 425 L745 355"/>
+            </g>
+            <g class="mesh-points"><circle cx="35" cy="240" r="4"/><circle cx="155" cy="125" r="4"/><circle cx="300" cy="190" r="4"/><circle cx="450" cy="55" r="4"/><circle cx="600" cy="190" r="4"/><circle cx="745" cy="125" r="4"/><circle cx="865" cy="240" r="4"/><circle cx="745" cy="355" r="4"/><circle cx="600" cy="290" r="4"/><circle cx="450" cy="425" r="4"/><circle cx="300" cy="290" r="4"/><circle cx="155" cy="355" r="4"/></g>
+          </svg>
+          <div class="eye">
+            <div class="eye-lid top"></div><div class="eye-lid bottom"></div>
+            <div class="iris"><div class="iris-grid"></div><div class="pupil"><span></span></div></div>
+          </div>
+          <div class="reticle"><span></span><i></i></div>
+          <div class="beam"></div>
+        </div>
+        <div class="core-readout"><span>ORION</span><b>AI CORE</b><em>VERSION 2147.11</em><strong>STATUS: GOVERNING</strong></div>
+        <div class="stage-footer">AUTONOMOUS OVERSIGHT: GLOBAL INFRASTRUCTURE · ACTIVE</div>
+      </section>
+
+      <aside class="rail right-rail">
+        <article class="panel">
+          <div class="panel-head"><span>QUANTUM PROCESSOR BANK</span><b>ARRAY 07·14</b></div>
+          <div class="processor"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="metric"><span>QUBIT COHERENCE</span><strong id="coherence">98.71%</strong></div>
+          <div class="metric"><span>THERMAL STATE</span><strong>NOMINAL</strong></div>
+        </article>
+        <article class="panel">
+          <div class="panel-head"><span>SATELLITE NETWORK</span><b>MONITORED</b></div>
+          <div class="sat-orbit"><div class="planet"></div><i class="sat s1"></i><i class="sat s2"></i><i class="sat s3"></i></div>
+          <div class="metric"><span>OBJECTS TRACKED</span><strong>3,821</strong></div>
+          <div class="metric"><span>LINK HEALTH</span><strong>99.98%</strong></div>
+        </article>
+        <article class="panel">
+          <div class="panel-head"><span>ATMOSPHERIC REGULATION</span><b>NOMINAL</b></div>
+          <div class="wave"><svg viewBox="0 0 320 70" preserveAspectRatio="none"><path d="M0 38 C25 12 40 58 65 36 S105 16 130 37 S170 58 195 33 S235 13 260 36 S300 57 320 30"/></svg></div>
+          <div class="metric"><span>INTEGRITY</span><strong>99.91%</strong></div>
+        </article>
+      </aside>
+    </section>
+
+    <section class="floor-grid">
+      <article class="floor-card globe-card"><span>GLOBAL POWER GRID</span><b>STABLE · 99.994% UPTIME</b><div class="floor-globe"></div></article>
+      <article class="floor-card"><span>ATMOSPHERIC REGULATION</span><b>NOMINAL</b><div class="circuit"><i></i><i></i><i></i><i></i><i></i></div></article>
+      <article class="floor-card"><span>GLOBAL NETLINK</span><b>18,472 NODES</b><div class="pulse-map"><i></i><i></i><i></i><i></i></div></article>
+    </section>
+  </main>
+
+  <main id="network" class="view data-view"><div class="data-header"><span>GLOBAL NETWORK FABRIC</span><b>LIVE VISUALIZATION</b></div><div class="data-grid" id="networkGrid"></div></main>
+  <main id="telemetry" class="view data-view"><div class="data-header"><span>ORION TELEMETRY</span><b>READ-ONLY OBSERVABILITY</b></div><div class="telemetry-grid" id="telemetryGrid"></div></main>
+  <main id="systems" class="view data-view"><div class="data-header"><span>SYSTEMS CONTROL</span><b>SAFE LOCAL CONTROLS</b></div><div class="control-grid"><button data-toggle="grid">NETWORK MESH <b>ON</b></button><button data-toggle="scan">SCANLINE <b>ON</b></button><button data-toggle="pulse">CORE PULSE <b>ON</b></button><button data-toggle="ambient">AMBIENT FX <b>ON</b></button><a class="launch" href="./index.html">OPEN LIVE GOD'S EYE VIEW →</a></div></main>
+
+  <footer><span>ORION // UI CONTROL SURFACE</span><span>DATA STATUS: DEMONSTRATION TELEMETRY · CONNECT LIVE SOURCES THROUGH THE EXISTING GEV DATA LAYERS</span><span id="clock">--:--:--</span></footer>
+  <script type="module" src="./orion.js"></script>
+</body>
+</html>
